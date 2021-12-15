@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" blendMode="EXCLUSION" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color:brown&#10;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="GoogleFlight.VisitorFXMLController">
+  <children>
+    <Label layoutX="186.0" layoutY="298.0" prefHeight="54.0" prefWidth="244.0" text="You have logged in as a visitor" textFill="#990049">
+      <font>
+        <Font name="System Bold" size="16.0" />
+      </font>
+    </Label>
+    <Button id="SearchFlightMenuItemOnClick" fx:id="SearchFlightButton" layoutX="0.0" layoutY="6.0" mnemonicParsing="false" onAction="#SearchFlightButtonOnClick" prefWidth="210.0" text="SearchFlight" />
+    <Button fx:id="ExploreTripButton" layoutX="223.0" layoutY="6.0" mnemonicParsing="false" onAction="#ExploreTripButtonOnClick" prefWidth="198.0" text="Explore Trip" />
+    <Button fx:id="CommentButton" layoutX="431.0" layoutY="6.0" mnemonicParsing="false" onAction="#CommentButtonOnClick" prefWidth="155.0" text="Comment For Enquiry" />
+    <Button fx:id="LogOutButon" layoutX="498.0" layoutY="342.0" mnemonicParsing="false" onAction="#LogOutButonOnClick" text="Log Out" />
+  </children>
+</AnchorPane>

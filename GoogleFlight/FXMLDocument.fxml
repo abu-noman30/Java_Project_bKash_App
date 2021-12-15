@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="MainAnchorPane" prefHeight="314.0" prefWidth="522.0" style="-fx-background-color:blue&#10;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="GoogleFlight.FXMLDocumentController">
+  <children>
+    <Button id="button" fx:id="SignInButton" layoutX="441.0" layoutY="14.0" onAction="#SignInButtonOncClick" text="Sign In" textFill="#00a3ff" />
+    <AnchorPane fx:id="WelcomeAnchorPane" layoutX="0.0" layoutY="0.0" prefHeight="314.0" prefWidth="361.0" style="-fx-background-color: skyblue;&#10;">
+      <children>
+        <Label fx:id="WelcomeLabel" layoutX="0.0" layoutY="107.0" prefHeight="101.0" prefWidth="361.0" text="Welcome To Google Flight" textFill="#4100cc">
+          <font>
+            <Font name="System Bold" size="28.0" />
+          </font>
+        </Label>
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>

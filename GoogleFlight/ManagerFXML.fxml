@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color:maroon&#10;&#10;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="GoogleFlight.ManagerFXMLController">
+  <children>
+    <Button fx:id="CheckDataAnalysisReport" layoutX="14.0" layoutY="36.0" mnemonicParsing="false" onAction="#CheckDataAnalysisReportOnClick" prefWidth="191.0" text="Check Data Analysis">
+      <textFill>
+        <Color blue="0.000" green="0.144" red="0.600" fx:id="x1" />
+      </textFill>
+    </Button>
+    <MenuBar layoutX="0.0" layoutY="0.0" prefWidth="600.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Close" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Delete" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <TextArea fx:id="TextArea" layoutX="14.0" layoutY="83.0" prefHeight="215.0" prefWidth="240.0" wrapText="true" />
+    <Button fx:id="CustomerDetailButton" layoutX="14.0" layoutY="316.0" mnemonicParsing="false" onAction="#CustomerDetailButtonOnClick" prefWidth="277.0" text="View Customer Detains On The Field Above" textFill="$x1" />
+    <Button fx:id="LogOut" layoutX="491.0" layoutY="337.0" mnemonicParsing="false" onAction="#LogOutOnClick" text="Log Out" />
+  </children>
+</AnchorPane>

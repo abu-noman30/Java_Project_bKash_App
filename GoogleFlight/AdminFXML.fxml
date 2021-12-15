@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color:lightblue&#10;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="GoogleFlight.AdminFXMLController">
+  <children>
+    <Button fx:id="HandOverTuskButton" layoutX="0.0" layoutY="82.0" mnemonicParsing="false" onAction="#HandOverTuskButtonOnClick" prefWidth="164.0" text="Hand Over Tusk To...">
+      <textFill>
+        <Color blue="0.880" green="1.000" red="0.000" fx:id="x1" />
+      </textFill>
+    </Button>
+    <Button fx:id="OpenIDButton" layoutX="198.0" layoutY="82.0" mnemonicParsing="false" onAction="#OpenIDButtonOnClick" prefWidth="164.0" text="Open ID For Someone" textFill="$x1" />
+    <Button fx:id="DumpUpdatedTicketButton" layoutX="395.0" layoutY="82.0" mnemonicParsing="false" onAction="#DumpUpdatedTicketButtonOnclick" prefWidth="191.0" text="Dump Updated Ticket Price" textFill="$x1" />
+    <Label layoutX="240.0" layoutY="35.0" prefWidth="96.0" text="Home" textFill="$x1">
+      <font>
+        <Font name="System Bold" size="20.0" />
+      </font>
+    </Label>
+    <Button fx:id="LogOut" layoutX="491.0" layoutY="344.0" mnemonicParsing="false" onAction="#LogOutOnClick" text="Log Out" />
+  </children>
+</AnchorPane>

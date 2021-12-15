@@ -1,0 +1,4 @@
+Dhaka,Chittagong,13000
+barishal,khulna,6000
+sylhet,chittagong,4000
+chittagong,barisal,14000

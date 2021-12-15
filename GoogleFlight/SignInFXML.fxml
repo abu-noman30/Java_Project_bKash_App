@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color:maroon&#10;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="GoogleFlight.SignInFXMLController">
+  <children>
+    <TextField fx:id="NameTextField" layoutX="154.0" layoutY="63.0" prefWidth="200.0" text="Enter Full Name" />
+    <TextField fx:id="passwordTextField" layoutX="154.0" layoutY="111.0" prefWidth="200.0" text="Enter Password" />
+    <ComboBox fx:id="userTypeComboBox" layoutX="154.0" layoutY="161.0" prefHeight="21.0" prefWidth="200.0" promptText="Select User Type">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Admin" />
+          <String fx:value="Manager" />
+          <String fx:value="Visitor" />
+          <String fx:value="Airlines Company" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Button fx:id="NextButton" layoutX="426.0" layoutY="310.0" mnemonicParsing="false" onAction="#NextButtonOnClick" text="Next" />
+    <Label fx:id="LabelForWrongInfo" layoutX="154.0" layoutY="256.0" prefHeight="35.0" prefWidth="200.0" text="" textFill="RED">
+      <font>
+        <Font name="System Bold" size="16.0" />
+      </font>
+    </Label>
+    <Label fx:id="userTypeLabel" layoutX="154.0" layoutY="211.0" prefWidth="200.0" text="" />
+    <Button fx:id="VisitorScene" layoutX="449.0" layoutY="54.0" mnemonicParsing="false" onAction="#VisitorSceneButtonOnClick" text="Visitor scene" />
+    <Button fx:id="AdminScene" layoutX="449.0" layoutY="111.0" mnemonicParsing="false" onAction="#AdminSceneButtonOnClick" text="Admin Scene" />
+    <Button fx:id="ManagerScene" layoutX="449.0" layoutY="161.0" mnemonicParsing="false" onAction="#ManagerSceneButtonOnClick" text="Manager Scene" />
+    <Button fx:id="AirlinesCompanyButton" layoutX="449.0" layoutY="201.0" mnemonicParsing="false" onAction="#AirlinesCompanyButtonOnClick" text="Airlines Company Scene" />
+    <Button id="PreviousButtonOnClick" fx:id="PreviousButton" layoutX="36.0" layoutY="310.0" mnemonicParsing="false" onAction="#PreviousButtonOnClick" text="Previous" />
+  </children>
+</AnchorPane>

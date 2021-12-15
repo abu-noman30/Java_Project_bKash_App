@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="583.0" prefWidth="600.0" style="-fx-background-color:maroon&#10;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="GoogleFlight.PieChartFXMLController">
+  <children>
+    <PieChart fx:id="PieChart" layoutX="50.0" layoutY="26.0" style="-fx-background-color:lightblue&#10;" />
+    <Button fx:id="LoadPieChart" layoutX="252.0" layoutY="493.0" mnemonicParsing="false" onAction="#LoadPieChartOnClick" text="Load Pie Chart" />
+  </children>
+</AnchorPane>

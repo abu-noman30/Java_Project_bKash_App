@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color:purple&#10;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="GoogleFlight.AirlinesCompanyFXMLController">
+  <children>
+    <Button layoutX="27.0" layoutY="30.0" mnemonicParsing="false" prefWidth="221.0" text="Update Flight Details" textFill="#cc00c4" />
+    <Button layoutX="272.0" layoutY="31.0" mnemonicParsing="false" prefWidth="244.0" text="Book Ticket For A Customer">
+      <textFill>
+        <Color blue="0.800" green="0.000" red="0.640" fx:id="x1" />
+      </textFill>
+    </Button>
+    <Button layoutX="27.0" layoutY="95.0" mnemonicParsing="false" prefWidth="221.0" text="Check Data Analysis Report" textFill="$x1" />
+    <Button fx:id="LogOut" layoutX="495.0" layoutY="337.0" mnemonicParsing="false" onAction="#LogOutOjnClick" text="Log Out" />
+  </children>
+</AnchorPane>

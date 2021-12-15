@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="266.0" prefWidth="426.0" style="-fx-background-color:magenta&#10;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="GoogleFlight.FXMLScene2Controller">
+  <children>
+    <Button fx:id="CreatAccountButton" layoutX="95.0" layoutY="51.0" mnemonicParsing="false" onAction="#CreatAccountButtonOnClick" prefWidth="236.0" text="Creat Account" />
+    <Button fx:id="SignInButton" layoutX="102.0" layoutY="133.0" mnemonicParsing="false" onAction="#SignInButtonOnClick" prefWidth="222.0" text="SignIn" />
+  </children>
+</AnchorPane>

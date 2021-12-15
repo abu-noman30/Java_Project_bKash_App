@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="382.0000999999975" prefWidth="585.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="GoogleFlight.DataAnalysisController">
+  <children>
+    <BorderPane fx:id="borderPane" layoutX="0.0" layoutY="0.0" prefHeight="382.0001220703125" prefWidth="585.0" style="-fx-background-color:lightblue&#10;">
+      <left>
+        <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color:blue">
+          <children>
+            <Button fx:id="PieChartButton" mnemonicParsing="false" onMouseClicked="#PieChartButtonOnMouseClick" text="PieChart" />
+            <Button fx:id="ClearButton" mnemonicParsing="false" onAction="#ClearButtonOnClick" text="Clear" />
+          </children>
+        </VBox>
+      </left>
+    </BorderPane>
+  </children>
+</AnchorPane>

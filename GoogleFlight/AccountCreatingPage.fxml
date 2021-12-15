@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color:lightpink&#10;&#10;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="GoogleFlight.AccountCreatingPageController">
+  <children>
+    <TextField id="NameButton" fx:id="NameField" layoutX="189.0" layoutY="55.0" prefWidth="200.0" text="Enter Full Name" />
+    <TextField fx:id="EmailField" layoutX="189.0" layoutY="95.0" prefWidth="200.0" text="Enter Email Address" />
+    <TextField fx:id="NIDnoField" layoutX="189.0" layoutY="139.0" prefWidth="200.0" text="Enter NID Number" />
+    <TextField fx:id="passwordField" layoutX="189.0" layoutY="224.0" prefWidth="200.0" text="Enter Password" />
+    <RadioButton fx:id="MaleRadioButton" layoutX="189.0" layoutY="293.0" mnemonicParsing="false" onAction="#RadioButtonOnClick" text="Male" />
+    <RadioButton fx:id="FemaleRadioButton" layoutX="272.0" layoutY="293.0" mnemonicParsing="false" onAction="#RadioButtonOnClick" text="Female" />
+    <Button fx:id="NextButton" layoutX="528.0" layoutY="365.0" mnemonicParsing="false" onAction="#NextButtonOnClick" text="Next" />
+    <Label id="GenderLabel" fx:id="genderLabel" layoutX="189.0" layoutY="268.0" prefWidth="57.0" text="Gender:" />
+    <TextField fx:id="ageTextField" layoutX="189.0" layoutY="178.0" prefWidth="200.0" text="Enter Age" />
+    <Button fx:id="CreatAccountButton" layoutX="189.0" layoutY="333.0" mnemonicParsing="false" onAction="#CreatAccountButtonOnClick" prefWidth="140.0" text="Creat Account" />
+    <Button fx:id="ConfirmCreationButton" layoutX="189.0" layoutY="371.0" mnemonicParsing="false" onAction="#ConfirmCreationButtonOnClick" prefWidth="140.0" text="Confirm Creation" />
+    <Label fx:id="userTypeLabel" layoutX="190.0" layoutY="24.0" prefHeight="21.0" prefWidth="200.0" text="Visitor">
+      <font>
+        <Font size="18.0" />
+      </font>
+    </Label>
+    <Button fx:id="PreviousButton" layoutX="14.0" layoutY="359.0" mnemonicParsing="false" onAction="#PreviousButtonOnClick" text="Previous" />
+  </children>
+</AnchorPane>
