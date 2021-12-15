@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="506.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.AgentSignUpCustomerController">
+   <children>
+      <Label alignment="CENTER" layoutX="132.0" layoutY="38.0" prefHeight="46.0" prefWidth="350.0" text="Sign Up Customer">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="122.0" prefHeight="22.0" prefWidth="126.0" text="Name:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="156.0" prefHeight="22.0" prefWidth="126.0" text="National ID:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="193.0" prefHeight="22.0" prefWidth="126.0" text="Cell Number:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="225.0" prefHeight="22.0" prefWidth="126.0" text="Enter PIN:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="agSignUpNameTxt" layoutX="333.0" layoutY="121.0" onMouseClicked="#agSignUpNameTxtOnMouseClick" promptText="Enter Full Name" />
+      <TextField fx:id="agSignUpNIDTxt" layoutX="333.0" layoutY="155.0" onMouseClicked="#agSignUpNIDTxtOnMouseClick" promptText="Enter NID" />
+      <TextField fx:id="agSignUpCellNoTxt" layoutX="333.0" layoutY="192.0" onMouseClicked="#agSignUpCellNoTxtOnMouseClick" promptText="10 digits" />
+      <TextField fx:id="agSignUpPinTxt" layoutX="333.0" layoutY="224.0" onMouseClicked="#agSignUpPinTxtOnMouseClick" promptText="5 digits" />
+      <Button fx:id="agSignUpSubmitBtn" layoutX="381.0" layoutY="307.0" mnemonicParsing="false" onAction="#agSignUpSubmitBtnOnClick" text="Submit" />
+      <Button fx:id="agSignUpBackBtn" layoutX="535.0" layoutY="421.0" mnemonicParsing="false" onAction="#agSignUpBackBtnOnClick" text="Back" />
+      <Label layoutX="108.0" layoutY="262.0" prefHeight="22.0" prefWidth="126.0" text="Enter Balance:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="agSignUpBalTxt" layoutX="333.0" layoutY="261.0" onMouseClicked="#agSignUpBalTxtOnMouseClick" promptText="Enter Taka Amount" />
+   </children>
+</AnchorPane>

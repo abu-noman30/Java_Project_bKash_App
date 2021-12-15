@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="271.0" prefHeight="17.0" prefWidth="283.0" text="Sign Up Agent">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="46.0" prefHeight="22.0" prefWidth="126.0" text="Name:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="77.0" prefHeight="22.0" prefWidth="126.0" text="National ID:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="112.0" prefHeight="22.0" prefWidth="126.0" text="Cell Number:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="148.0" prefHeight="22.0" prefWidth="126.0" text="Enter PIN:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="184.0" prefHeight="22.0" prefWidth="126.0" text="Enter Balance:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="adminSignUpNameTxt" layoutX="211.0" layoutY="45.0" />
+      <TextField fx:id="adminSignUpNidTxt" layoutX="211.0" layoutY="77.0" />
+      <TextField fx:id="adminSignUpCellNoTxt" layoutX="211.0" layoutY="112.0" promptText="11 digits, Example: 01*********" />
+      <TextField fx:id="adminSignUpPinTxt" layoutX="209.0" layoutY="148.0" promptText="5 digits" />
+      <TextField fx:id="adminSignUpBalTxt" layoutX="209.0" layoutY="184.0" />
+      <Button fx:id="adminSignUpSubmitBtn" layoutX="209.0" layoutY="231.0" mnemonicParsing="false" onAction="#adminSignUpSubmitBtnOnClick" text="Submit" />
+      <Button fx:id="adminSignUpBackBtn" layoutX="697.0" layoutY="540.0" mnemonicParsing="false" onAction="#adminSignUpBackBtnonClick" text="Back" />
+      <Label alignment="CENTER" layoutX="262.0" layoutY="277.0" prefHeight="46.0" prefWidth="350.0" text="Agent List">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="adminAgListTableView" layoutX="117.0" layoutY="343.0" prefHeight="174.0" prefWidth="566.0">
+         <columns>
+            <TableColumn fx:id="adminAgListNameColumn" prefWidth="128.0" text="Name" />
+            <TableColumn fx:id="adminAgListNidColumn" prefWidth="121.0" text="National ID" />
+            <TableColumn fx:id="adminAgListCellNoColumn" prefWidth="118.0" text="Cell Number" />
+            <TableColumn fx:id="adminAgListPinCodeColumn" prefWidth="98.0" text="Pin " />
+            <TableColumn fx:id="adminAgListBalColumn" prefWidth="99.0" text="Balance" />
+         </columns>
+      </TableView>
+      <Button fx:id="adminSignUpAddToTableBtn" layoutX="271.0" layoutY="231.0" mnemonicParsing="false" onAction="#adminSignUpAddToTableBtnOnClick" text="Add to Table" />
+   </children>
+</AnchorPane>

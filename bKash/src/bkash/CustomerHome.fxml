@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.CustomerHomePageController">
+   <children>
+      <Label alignment="CENTER" layoutX="161.0" layoutY="27.0" prefHeight="55.0" prefWidth="399.0" text="Customer Home">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="cusSendMoneyBtn" layoutX="103.0" layoutY="164.0" mnemonicParsing="false" onAction="#cusSendMoneyBtnOnClick" prefHeight="54.0" prefWidth="160.0" text="Send Money">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="cusCashOutBtn" layoutX="103.0" layoutY="219.0" mnemonicParsing="false" onAction="#cusCashOutBtnOnClick" prefHeight="54.0" prefWidth="160.0" text="Cash Out">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="cusMakePayBtn" layoutX="103.0" layoutY="273.0" mnemonicParsing="false" onAction="#cusMakePayBtnOnClick" prefHeight="54.0" prefWidth="160.0" text="Make Payment">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="cusFeedbackBtn" layoutX="457.0" layoutY="219.0" mnemonicParsing="false" onAction="#cusFeedbackBtnOnClick" prefHeight="54.0" prefWidth="160.0" text="Feedback">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="cusLogoutBtn" layoutX="654.0" layoutY="503.0" mnemonicParsing="false" onAction="#cusLogoutBtnOnClick" prefHeight="31.0" prefWidth="79.0" text="LogOut">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

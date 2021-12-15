@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.AdminMakeContractWithMerchantController">
+   <bottom>
+      <AnchorPane prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="230.0" layoutY="14.0" prefHeight="46.0" prefWidth="350.0" text="Marchent SignUp">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="83.0" layoutY="78.0" prefHeight="22.0" prefWidth="126.0" text="Name:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="82.0" layoutY="119.0" prefHeight="22.0" prefWidth="126.0" text="Trade License:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="82.0" layoutY="155.0" prefHeight="22.0" prefWidth="126.0" text="Cell Number:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="82.0" layoutY="239.0" prefHeight="22.0" prefWidth="126.0" text="Enter PIN:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="adminConMerchNameTxt" layoutX="222.0" layoutY="78.0" />
+            <TextField fx:id="adminConMerchTdLicenseTxt" layoutX="222.0" layoutY="117.0" />
+            <TextField fx:id="adminConMerchCellNoTxt" layoutX="222.0" layoutY="153.0" promptText="10 digits" />
+            <TextField fx:id="adminConMerchPinTxt" layoutX="222.0" layoutY="238.0" promptText="5 digits" />
+            <Button fx:id="adminConMerchBackBtn" layoutX="739.0" layoutY="536.0" mnemonicParsing="false" onAction="#adminConMerchBackBtnOnClick" text="Back" />
+            <Button fx:id="adminConMerchSubmitBtn" layoutX="223.0" layoutY="275.0" mnemonicParsing="false" onAction="#adminConMerchSubmitBtnOnClick" text="Submit" />
+            <Label layoutX="82.0" layoutY="195.0" prefHeight="22.0" prefWidth="126.0" text="Discount Amount:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="CENTER" layoutX="109.0" layoutY="331.0" prefHeight="35.0" prefWidth="615.0" text="Change Promotion to Merchant or Delete Merchant">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TableView fx:id="adminConMerchTableView" layoutX="112.0" layoutY="392.0" prefHeight="117.0" prefWidth="588.0">
+               <columns>
+                  <TableColumn fx:id="adminConMerchNameColumn" prefWidth="105.0" text="Name" />
+                  <TableColumn fx:id="adminConMerchTdLicenseColumn" prefWidth="109.0" text="Trade License" />
+                  <TableColumn fx:id="adminConMerchCellNoColumn" prefWidth="111.0" text="Cell Number" />
+                  <TableColumn fx:id="adminConMerchDisAmountColumn" prefWidth="105.0" text="Discount Amount" />
+                  <TableColumn fx:id="adminConMerchPinCodeColumn" prefWidth="100.0" text="Pin Code" />
+               </columns>
+            </TableView>
+            <Label layoutX="161.0" layoutY="509.0" prefHeight="26.0" prefWidth="269.0" text="Select From Table to Delete Merchant:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="adminDeleteMerchantBtn" layoutX="542.0" layoutY="509.0" mnemonicParsing="false" onAction="#adminDeleteMerchantBtnOnClick" text="Delete Merchant (s)" />
+            <TextField fx:id="adminConMerchPromoCodeTxt" layoutX="223.0" layoutY="194.0" />
+            <Button fx:id="adminConMerchSubmitBtn1" layoutX="285.0" layoutY="275.0" mnemonicParsing="false" onAction="#adminConMerchLoadBtnOnClick" text="Load in Table" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

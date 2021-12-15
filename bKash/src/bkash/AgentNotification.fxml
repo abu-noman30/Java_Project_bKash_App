@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="469.0" prefWidth="647.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.AgentNotificationController">
+   <children>
+      <Label alignment="CENTER" layoutX="240.0" layoutY="26.0" prefHeight="35.0" prefWidth="167.0" text="Notification">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="agNotifyHomeBtn" layoutX="481.0" layoutY="371.0" mnemonicParsing="false" onAction="#agNotifyHomeBtnOnClick" text="Go to Home" />
+      <TextArea fx:id="outputTxtArea" layoutX="150.0" layoutY="78.0" prefHeight="200.0" prefWidth="390.0" />
+      <Button fx:id="loadTransFile" layoutX="281.0" layoutY="295.0" mnemonicParsing="false" onAction="#loadTransFileOnClick" text="Load Transaction File" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="525.0" prefWidth="667.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.CustomerCashOutController">
+   <children>
+      <Label alignment="CENTER" layoutX="285.0" layoutY="28.0" text="Cash Out">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="127.0" prefHeight="20.0" prefWidth="148.0" text="Enter Agent Number:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cusCashOutAgentNoTxt" layoutX="279.0" layoutY="125.0" />
+      <Label layoutX="46.0" layoutY="175.0" prefHeight="20.0" prefWidth="148.0" text="Enter Amount:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cusCashOutAmtTxt" layoutX="279.0" layoutY="173.0" />
+      <Label layoutX="46.0" layoutY="254.0" prefHeight="20.0" prefWidth="148.0" text="Enter PIN:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cusCashOutPinTxt" layoutX="279.0" layoutY="250.0" />
+      <Button fx:id="cusCashOutBtn" layoutX="298.0" layoutY="296.0" mnemonicParsing="false" onAction="#cusCashOutBtnOnClick" text="Cash Out" />
+      <Button fx:id="cusCashOutBackBtn" layoutX="382.0" layoutY="296.0" mnemonicParsing="false" onAction="#cusCashOutBackBtnOnClick" prefHeight="25.0" prefWidth="58.0" text="Back" />
+      <Label layoutX="46.0" layoutY="216.0" prefHeight="20.0" prefWidth="187.0" text="Enter your Number to Verify:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cusCashOutUserCellNoTxt" layoutX="279.0" layoutY="214.0" />
+   </children>
+</AnchorPane>
